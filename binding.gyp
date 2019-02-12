@@ -31,6 +31,10 @@
                     ]
                 }
             }]
+        ],
+
+        'sources': [
+            'src/clipboard.cc'
         ]
     }]
 }
