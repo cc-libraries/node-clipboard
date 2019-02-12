@@ -10,10 +10,18 @@
  * author: hello_chenchen <https://github.com/hello-chenchen>
  **********************************************************************************/
 
-#include <node.h>
-#include <nan.h>
-#include <v8.h>
+#ifndef CCLIB_CLIPBOARD_H_
+#define CCLIB_CLIPBOARD_H_
+
+#include <base/os.h>
+
+#if defined(IS_MACOSX)
+#include <AppKit/AppKit.h>
+
+#endif
 
 namespace cclib {
 
 } //cclib
+
+#endif  // CCLIB_CLIPBOARD_H_
