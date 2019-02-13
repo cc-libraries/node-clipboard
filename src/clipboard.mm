@@ -18,7 +18,8 @@
 
 namespace cclib {
 
-    void clipboard::foo() {
+    int clipboard::foo() {
         NSLog(@"Hello, World111!");
+        return 100;
     }
 } //cclib

@@ -30,7 +30,7 @@ class clipboard{
     ~clipboard();
 
   public:
-    void foo();
+    int foo();
 }; //class clipboard
 
 } //namespace cclib
