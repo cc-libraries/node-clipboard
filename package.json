@@ -1,0 +1,33 @@
+{
+  "name": "clipboard",
+  "version": "0.0.1",
+  "description": "node-clipboard-api-adapter",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "install": "prebuild-install || node-gyp rebuild",
+    "prebuild": "prebuild --all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hello-chenchen/node-clipboard-api-adapter.git"
+  },
+  "keywords": [
+    "clipboard"
+  ],
+  "author": "hello-chenchen",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/hello-chenchen/node-clipboard-api-adapter/issues"
+  },
+  "homepage": "https://github.com/hello-chenchen/node-clipboard-api-adapter",
+  "dependencies": {
+    "nan": "^2.2.1",
+    "prebuild-install": "^2.1.1"
+  },
+  "devDependencies": {
+    "prebuild": "^7.4.0",
+    "targetpractice": "0.0.7"
+  }
+}

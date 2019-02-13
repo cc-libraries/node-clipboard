@@ -1,6 +1,6 @@
 {
     'targets': [{
-        'target_name': 'node-clipboard-api-adapter',
+        'target_name': 'clipboard',
 
         # LINK: https://github.com/nodejs/nan readme
         # Pull in the path to NAN in your binding.gyp so that you can use #include <nan.h> in your .cpp files:
@@ -23,18 +23,20 @@
         'conditions': [
             ['OS == "mac"', {
                 'include_dirs': [
-                    '/System/Library/Frameworks/AppKit.framework/Headers' #TODO: maybe need more framework Headers(e.g: )
+                    '/System/Library/Frameworks/AppKit.framework/Headers', #TODO: maybe need more framework Headers(e.g: )
+                    '/System/Library/Frameworks/Foundation.framework/Headers'
                 ],
                 'link_settings': {
                     'libraries': [
-                        '-framework AppKit'
+                        '-framework AppKit',
+                        '-framework Foundation'
                     ]
                 }
             }]
         ],
 
         'sources': [
-            'src/clipboard.cc'
+            'src/clipboard.mm'
         ]
     }]
 }

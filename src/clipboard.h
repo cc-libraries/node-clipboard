@@ -13,15 +13,26 @@
 #ifndef CCLIB_CLIPBOARD_H_
 #define CCLIB_CLIPBOARD_H_
 
-#include <base/os.h>
+#include "base/os.h"
 
 #if defined(IS_MACOSX)
 #include <AppKit/AppKit.h>
+#include <AppKit/NSPasteboard.h>
+#include <Foundation/Foundation.h>
 
 #endif
 
 namespace cclib {
 
-} //cclib
+class clipboard{
+  public:
+    clipboard();
+    ~clipboard();
+
+  public:
+    void foo();
+}; //class clipboard
+
+} //namespace cclib
 
 #endif  // CCLIB_CLIPBOARD_H_

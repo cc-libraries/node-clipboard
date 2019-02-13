@@ -14,6 +14,11 @@
 #include <nan.h>
 #include <v8.h>
 
+#include "clipboard.h"
+
 namespace cclib {
 
+    void clipboard::foo() {
+        NSLog(@"Hello, World111!");
+    }
 } //cclib
