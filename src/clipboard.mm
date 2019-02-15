@@ -33,7 +33,7 @@ using namespace v8;
 NAN_METHOD(foo)
 {
 
-    NSLog(@"Hello, World111!");
+    // NSLog(@"Hello, World111!");
     // size_t vaule = 100;
 
 	//Create our return object.
