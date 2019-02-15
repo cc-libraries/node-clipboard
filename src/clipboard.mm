@@ -34,11 +34,12 @@ NAN_METHOD(foo)
 {
 
     NSLog(@"Hello, World111!");
-    // size_t vaule = 100;
+    // NSString
+    NSInteger vaule = 100;
 
 	//Create our return object.
 	Local<Object> obj = Nan::New<Object>();
-	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(1000));
+	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(vaule));
 
 	info.GetReturnValue().Set(obj);
 }
