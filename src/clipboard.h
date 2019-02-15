@@ -22,17 +22,17 @@
 
 #endif
 
-namespace cclib {
+// namespace cclib {
 
-class clipboard{
-  public:
-    clipboard();
-    ~clipboard();
+// class clipboard{
+//   public:
+//     clipboard();
+//     ~clipboard();
 
-  public:
-    int foo();
-}; //class clipboard
+//   public:
+//     int foo();
+// }; //class clipboard
 
-} //namespace cclib
+// } //namespace cclib
 
 #endif  // CCLIB_CLIPBOARD_H_

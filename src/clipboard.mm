@@ -14,12 +14,37 @@
 #include <nan.h>
 #include <v8.h>
 
-#include "clipboard.h"
+#include <AppKit/AppKit.h>
+#include <AppKit/NSPasteboard.h>
+#include <Foundation/Foundation.h>
+// #include "clipboard.h"
 
-namespace cclib {
 
-    int clipboard::foo() {
-        NSLog(@"Hello, World111!");
-        return 100;
-    }
-} //cclib
+// namespace cclib {
+
+//     int clipboard::foo() {
+//         NSLog(@"Hello, World111!");
+//         return 100;
+//     }
+// } //cclib
+
+NAN_METHOD(foo)
+{
+
+    NSLog(@"Hello, World111!");
+    size_t vaule = 100;
+
+	//Create our return object.
+	Local<Object> obj = Nan::New<Object>();
+	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(vaule));
+
+	info.GetReturnValue().Set(obj);
+}
+
+NAN_MODULE_INIT(InitAll)
+{
+    Nan::Set(target, Nan::New("foo").ToLocalChecked(),
+		Nan::GetFunction(Nan::New<FunctionTemplate>(foo)).ToLocalChecked());
+}
+
+NODE_MODULE(clipboard, InitAll)
