@@ -28,6 +28,8 @@
 //     }
 // } //cclib
 
+using namespace v8;
+
 NAN_METHOD(foo)
 {
 
