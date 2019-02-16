@@ -36,6 +36,7 @@
         ],
 
         'sources': [
+            'src/node_clipboard_api_adapter.cc',
             'src/clipboard.mm'
         ]
     }]

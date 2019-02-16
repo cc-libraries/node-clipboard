@@ -1,7 +1,7 @@
 /*********************************************************************
  * node-clipboard-api-adapter
  *
- * Copyright (c) 2018 node-clipboard-api-adapter contributors:
+ * Copyright (c) 2019 node-clipboard-api-adapter contributors:
  *   - hello_chenchen <https://github.com/hello-chenchen>
  *
  * MIT License <https://github.com/hello-chenchen/node-clipboard-api-adapter/blob/master/LICENSE>
@@ -13,26 +13,38 @@
 #ifndef CCLIB_CLIPBOARD_H_
 #define CCLIB_CLIPBOARD_H_
 
+#include <node.h>
+#include <nan.h>
+#include <v8.h>
+
 #include "base/os.h"
 
-#if defined(IS_MACOSX)
+#if defined(IS_MACOSX1)
 #include <AppKit/AppKit.h>
 #include <AppKit/NSPasteboard.h>
 #include <Foundation/Foundation.h>
 
 #endif
 
-// namespace cclib {
+namespace cclib {
 
-// class clipboard{
-//   public:
-//     clipboard();
-//     ~clipboard();
+class Clipboard;
 
-//   public:
-//     int foo();
-// }; //class clipboard
+class clipboard: public Nan::ObjectWrap {
+  public:
+    clipboard() : Nan::ObjectWrap(),
+    flag(-1) {
+      //TODO: constructor
+    };
+    virtual ~clipboard();
 
-// } //namespace cclib
+    public:
+    virtual size_t foo() = 0;
+
+  private:
+    size_t flag;
+}; //class clipboard
+
+} //namespace cclib
 
 #endif  // CCLIB_CLIPBOARD_H_

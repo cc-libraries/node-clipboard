@@ -11,9 +11,3 @@
  **********************************************************************************/
 
 #include "clipboard.h"
-
-using namespace v8;
-
-namespace cclib {
-
-} //namespace cclib
