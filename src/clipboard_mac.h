@@ -10,10 +10,27 @@
  * author: hello_chenchen <https://github.com/hello-chenchen>
  **********************************************************************************/
 
-#include "clipboard.h"
+#ifndef CCLIB_CLIPBOARD_MAC_H_
+#define CCLIB_CLIPBOARD_MAC_H_
 
-using namespace v8;
+#include <AppKit/AppKit.h>
+#include <AppKit/NSPasteboard.h>
+#include <Foundation/Foundation.h>
+
+#include "clipboard.h"
 
 namespace cclib {
 
-} //namespace cclib
+class ClipboardMac : public Clipboard {
+
+    public:
+        ClipboardMac();
+        ~ClipboardMac();
+
+    public:
+        size_t foo();
+};
+
+}
+
+#endif

@@ -1,3 +1,4 @@
+
 /*********************************************************************
  * node-clipboard-api-adapter
  *
@@ -10,29 +11,19 @@
  * author: hello_chenchen <https://github.com/hello-chenchen>
  **********************************************************************************/
 
-#ifndef CCLIB_CLIPBOARD_H_
-#define CCLIB_CLIPBOARD_H_
+#include "clipboard_mac.h"
 
-#include <node.h>
-#include <nan.h>
-#include <v8.h>
+namespace cclib{
 
-#include "base/os.h"
+ClipboardMac::ClipboardMac() {
+    //TODO: ClipboardMac
+}
 
-namespace cclib {
+size_t ClipboardMac::foo() {
+    NSInteger value = flag;
+    NSLog(@"CLipboardMac foo function");
 
-class Clipboard : public Nan::ObjectWrap {
-    public:
-        Clipboard();
-        virtual ~Clipboard() = 0;
+    return value;
+}
 
-    public:
-        virtual size_t foo() = 0;
-
-    public:
-        size_t flag;
-}; //class clipboard
-
-} //namespace cclib
-
-#endif  // CCLIB_CLIPBOARD_H_
+}
