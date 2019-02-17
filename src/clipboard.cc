@@ -18,6 +18,6 @@ namespace cclib {
 
 Clipboard::Clipboard() {
     //TODO: CLipboard
-    flag = -1;
+    flag = 100;
 }
 } //namespace cclib
