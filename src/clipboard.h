@@ -27,8 +27,7 @@ class Clipboard : public Nan::ObjectWrap {
         ~Clipboard();
 
     public:
-        // virtual size_t foo() = 0;
-        size_t func();
+        size_t foo();
 
     public:
         size_t flag;

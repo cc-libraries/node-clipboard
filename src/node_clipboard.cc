@@ -39,7 +39,7 @@ NAN_METHOD(foo)
         return;
     }
 
-	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(clipboardInstance->func()));
+	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(clipboardInstance->foo()));
 
 	info.GetReturnValue().Set(obj);
 

@@ -21,7 +21,7 @@ Clipboard::Clipboard() {
     flag = 100;
 }
 
-size_t Clipboard::func() {
+size_t Clipboard::foo() {
     return 101;
 }
 // } //namespace cclib
