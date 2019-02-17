@@ -1,5 +1,5 @@
 {
-  "name": "clipboard",
+  "name": "node_clipboard",
   "version": "0.0.1",
   "description": "node-clipboard",
   "main": "index.js",
