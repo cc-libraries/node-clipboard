@@ -1,4 +1,4 @@
-# node-clipboard-api-adapter
+# node-clipboard
 clipboard | pasteboard api for node
 
 ### The Code Style
