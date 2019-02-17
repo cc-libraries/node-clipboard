@@ -1,0 +1,53 @@
+/*********************************************************************
+ * node-clipboard
+ *
+ * Copyright (c) 2019 node-clipboard contributors:
+ *   - hello_chenchen <https://github.com/hello-chenchen>
+ *
+ * MIT License <https://github.com/hello-chenchen/node-clipboard/blob/master/LICENSE>
+ * See https://github.com/hello-chenchen/node-clipboard for the latest update to this file
+ *
+ * author: hello_chenchen <https://github.com/hello-chenchen>
+ **********************************************************************************/
+#include "clipboard.h"
+#include "clipboard_mac.h"
+#include "clipboard_x11.h"
+
+using namespace v8;
+using namespace cclib;
+
+NAN_METHOD(foo)
+{
+    Clipboard* clipboardInstance = NULL;
+	//Create our return object.
+	Local<Object> obj = Nan::New<Object>();
+
+    //clipboard macos install
+    #if defined(IS_MACOSX)
+    clipboardInstance = new ClipboardMac();
+    #endif
+
+    //clipboard linux install
+    #if defined(USE_X11)
+    clipboardInstance = new ClipboardX11();
+    #endif
+
+    if(NULL == clipboardInstance) {
+        info.GetReturnValue().Set(obj);
+        return;
+    }
+
+	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(clipboardInstance->foo()));
+
+	info.GetReturnValue().Set(obj);
+
+    delete clipboardInstance;
+}
+
+NAN_MODULE_INIT(InitAll)
+{
+    Nan::Set(target, Nan::New("foo").ToLocalChecked(),
+		Nan::GetFunction(Nan::New<FunctionTemplate>(foo)).ToLocalChecked());
+}
+
+NODE_MODULE(clipboard, InitAll)

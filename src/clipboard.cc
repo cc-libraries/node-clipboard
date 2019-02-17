@@ -10,29 +10,14 @@
  * author: hello_chenchen <https://github.com/hello-chenchen>
  **********************************************************************************/
 
-#ifndef CCLIB_CLIPBOARD_H_
-#define CCLIB_CLIPBOARD_H_
+#include "clipboard.h"
 
-#include <node.h>
-#include <nan.h>
-#include <v8.h>
-
-#include "base/os.h"
+using namespace v8;
 
 namespace cclib {
 
-class Clipboard : public Nan::ObjectWrap {
-    public:
-        Clipboard();
-        virtual ~Clipboard() = 0;
-
-    public:
-        virtual size_t foo() = 0;
-
-    public:
-        size_t flag;
-}; //class clipboard
-
+Clipboard::Clipboard() {
+    //TODO: CLipboard
+    flag = 100;
+}
 } //namespace cclib
-
-#endif  // CCLIB_CLIPBOARD_H_

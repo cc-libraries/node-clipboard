@@ -10,29 +10,27 @@
  * author: hello_chenchen <https://github.com/hello-chenchen>
  **********************************************************************************/
 
-#ifndef CCLIB_CLIPBOARD_H_
-#define CCLIB_CLIPBOARD_H_
+#ifndef CCLIB_CLIPBOARD_MAC_H_
+#define CCLIB_CLIPBOARD_MAC_H_
 
-#include <node.h>
-#include <nan.h>
-#include <v8.h>
+// #include <AppKit/AppKit.h>
+// #include <AppKit/NSPasteboard.h>
+// #include <Foundation/Foundation.h>
 
-#include "base/os.h"
+#include "clipboard.h"
 
 namespace cclib {
 
-class Clipboard : public Nan::ObjectWrap {
-    public:
-        Clipboard();
-        virtual ~Clipboard() = 0;
+class ClipboardMac : public Clipboard {
 
     public:
-        virtual size_t foo() = 0;
+        ClipboardMac();
+        ~ClipboardMac();
 
     public:
-        size_t flag;
-}; //class clipboard
+        size_t foo();
+};
 
-} //namespace cclib
+}
 
-#endif  // CCLIB_CLIPBOARD_H_
+#endif
