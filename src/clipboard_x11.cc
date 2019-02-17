@@ -18,10 +18,10 @@ ClipboardX11::ClipboardX11() {
     //TODO: ClipboardX11
 }
 
-size_t ClipboardX11::foo() {
-    size_t value = flag;
+// size_t ClipboardX11::foo() {
+//     size_t value = flag;
 
-    return value;
-}
+//     return value;
+// }
 
 // }

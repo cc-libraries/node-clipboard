@@ -24,7 +24,7 @@ class ClipboardX11 : public Clipboard {
         ~ClipboardX11();
 
     public:
-        size_t foo();
+        // size_t foo();
 };
 
 // }

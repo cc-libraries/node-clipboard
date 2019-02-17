@@ -20,4 +20,8 @@ Clipboard::Clipboard() {
     //TODO: CLipboard
     flag = 100;
 }
+
+size_t Clipboard::func() {
+    return 101;
+}
 // } //namespace cclib

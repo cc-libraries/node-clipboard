@@ -28,7 +28,7 @@ class ClipboardMac : public Clipboard {
         ~ClipboardMac();
 
     public:
-        size_t foo();
+        // size_t foo();
 };
 
 // }

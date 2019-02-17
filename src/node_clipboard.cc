@@ -23,21 +23,23 @@ NAN_METHOD(foo)
 	Local<Object> obj = Nan::New<Object>();
 
     //clipboard macos install
-    #if defined(IS_MACOSX)
-    clipboardInstance = new ClipboardMac();
-    #endif
+    // #if defined(IS_MACOSX)
+    // clipboardInstance = new ClipboardMac();
+    // #endif
 
-    //clipboard linux install
-    #if defined(USE_X11)
-    clipboardInstance = new ClipboardX11();
-    #endif
+    // //clipboard linux install
+    // #if defined(USE_X11)
+    // clipboardInstance = new ClipboardX11();
+    // #endif
+
+    clipboardInstance = new Clipboard();
 
     if(NULL == clipboardInstance) {
         info.GetReturnValue().Set(obj);
         return;
     }
 
-	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(clipboardInstance->foo()));
+	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(clipboardInstance->func()));
 
 	info.GetReturnValue().Set(obj);
 
