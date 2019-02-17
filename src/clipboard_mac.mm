@@ -11,6 +11,10 @@
  * author: hello_chenchen <https://github.com/hello-chenchen>
  **********************************************************************************/
 
+#include <AppKit/AppKit.h>
+#include <AppKit/NSPasteboard.h>
+#include <Foundation/Foundation.h>
+
 #include "clipboard_mac.h"
 
 namespace cclib{
