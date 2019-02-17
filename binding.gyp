@@ -37,9 +37,7 @@
 
         'sources': [
             'src/node_clipboard.cc',
-            'src/clipboard.cc',
-            'src/clipboard_mac.mm',
-            'src/clipboard_x11.cc'
+            'src/clipboard.cc'
         ]
     }]
 }
