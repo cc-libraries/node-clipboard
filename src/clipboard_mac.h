@@ -19,7 +19,7 @@
 
 #include "clipboard.h"
 
-namespace cclib {
+// namespace cclib {
 
 class ClipboardMac : public Clipboard {
 
@@ -31,6 +31,6 @@ class ClipboardMac : public Clipboard {
         size_t foo();
 };
 
-}
+// }
 
 #endif

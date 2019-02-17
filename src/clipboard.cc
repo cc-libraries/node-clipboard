@@ -14,10 +14,10 @@
 
 using namespace v8;
 
-namespace cclib {
+// namespace cclib {
 
 Clipboard::Clipboard() {
     //TODO: CLipboard
     flag = 100;
 }
-} //namespace cclib
+// } //namespace cclib

@@ -12,7 +12,7 @@
 
 #include "clipboard_x11.h"
 
-namespace cclib{
+// namespace cclib{
 
 ClipboardX11::ClipboardX11() {
     //TODO: ClipboardX11
@@ -24,4 +24,4 @@ size_t ClipboardX11::foo() {
     return value;
 }
 
-}
+// }

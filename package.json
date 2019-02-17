@@ -29,5 +29,6 @@
   "devDependencies": {
     "prebuild": "^7.4.0",
     "targetpractice": "0.0.7"
-  }
+  },
+  "__npminstall_done": false
 }

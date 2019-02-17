@@ -19,7 +19,7 @@
 
 #include "base/os.h"
 
-namespace cclib {
+// namespace cclib {
 
 class Clipboard : public Nan::ObjectWrap {
     public:
@@ -33,6 +33,6 @@ class Clipboard : public Nan::ObjectWrap {
         size_t flag;
 }; //class clipboard
 
-} //namespace cclib
+// } //namespace cclib
 
 #endif  // CCLIB_CLIPBOARD_H_

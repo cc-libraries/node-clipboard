@@ -14,7 +14,7 @@
 #include "clipboard_x11.h"
 
 using namespace v8;
-using namespace cclib;
+// using namespace cclib;
 
 NAN_METHOD(foo)
 {
