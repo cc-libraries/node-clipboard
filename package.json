@@ -1,7 +1,7 @@
 {
   "name": "node_clipboard",
   "version": "0.0.1",
-  "description": "node-clipboard",
+  "description": "clipboard",
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
