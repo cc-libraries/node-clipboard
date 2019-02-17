@@ -1,6 +1,6 @@
 {
     'targets': [{
-        'target_name': 'node_clipboard',
+        'target_name': 'clipboard',
 
         # LINK: https://github.com/nodejs/nan readme
         # Pull in the path to NAN in your binding.gyp so that you can use #include <nan.h> in your .cpp files:

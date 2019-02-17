@@ -50,4 +50,4 @@ NAN_MODULE_INIT(InitAll)
 		Nan::GetFunction(Nan::New<FunctionTemplate>(foo)).ToLocalChecked());
 }
 
-NODE_MODULE(node_clipboard, InitAll)
+NODE_MODULE(clipboard, InitAll)
