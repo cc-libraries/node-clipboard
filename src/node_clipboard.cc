@@ -44,8 +44,8 @@ NAN_METHOD(foo)
     //     info.GetReturnValue().Set(obj);
     //     return;
     // }
-
-	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(foo()));
+    int testValue = foo();
+	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(testValue));
 
 	info.GetReturnValue().Set(obj);
 
