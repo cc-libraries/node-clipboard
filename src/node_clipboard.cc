@@ -9,7 +9,7 @@
  *
  * author: hello_chenchen <https://github.com/hello-chenchen>
  **********************************************************************************/
-#include "clipboard.h"
+// #include "clipboard.h"
 // #include "clipboard_mac.h"
 // #include "clipboard_x11.h"
 
@@ -17,13 +17,14 @@
 #include <node.h>
 #include <nan.h>
 #include <v8.h>
+#include "clipboard_test.h"
 
 using namespace v8;
 // using namespace cclib;
 
 NAN_METHOD(foo)
 {
-    Clipboard* clipboardInstance = NULL;
+    // Clipboard* clipboardInstance = NULL;
 	//Create our return object.
 	Local<Object> obj = Nan::New<Object>();
 
@@ -37,18 +38,18 @@ NAN_METHOD(foo)
     // clipboardInstance = new ClipboardX11();
     // #endif
 
-    clipboardInstance = new Clipboard();
+    // clipboardInstance = new Clipboard();
 
-    if(NULL == clipboardInstance) {
-        info.GetReturnValue().Set(obj);
-        return;
-    }
+    // if(NULL == clipboardInstance) {
+    //     info.GetReturnValue().Set(obj);
+    //     return;
+    // }
 
-	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(100));
+	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(foo()));
 
 	info.GetReturnValue().Set(obj);
 
-    delete clipboardInstance;
+    // delete clipboardInstance;
 }
 
 NAN_MODULE_INIT(InitAll)
