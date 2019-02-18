@@ -39,12 +39,6 @@
             }]
         ],
 
-        'link_settings': {
-            'library_dirs': [
-            './clipboard/src/',
-            ],
-        },
-
         'sources': [
             'src/node_clipboard.cc',
             'src/clipboard.cc'
