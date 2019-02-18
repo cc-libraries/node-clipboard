@@ -40,8 +40,8 @@
         ],
 
         'sources': [
-            'src/clipboard.cc',
-            'src/node_clipboard.cc'
+            'src/node_clipboard.cc',
+            'src/clipboard_test.c'
         ]
     }]
 }
