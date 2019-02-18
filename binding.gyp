@@ -40,6 +40,7 @@
         ],
 
         'sources': [
+            'src/clipboard.cc',
             'src/node_clipboard.cc'
         ]
     }]
