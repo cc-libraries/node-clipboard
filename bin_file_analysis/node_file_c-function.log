@@ -1,0 +1,114 @@
+//COMMENT: gobjdump -x clipboard.node > ./../../bin_file_analysis/node_file_c-function.log
+
+clipboard.node:     file format mach-o-x86-64
+clipboard.node
+architecture: i386:x86-64, flags 0x00000050:
+HAS_SYMS, DYNAMIC
+start address 0x0000000000000000
+ MACH-O header:
+   magic:      0xfeedfacf
+   cputype:    0x1000007 (X86_64)
+   cpusubtype: 0x3 (X86_ALL)
+   filetype:   0x8
+   ncmds:      0xe
+   sizeocmds:  0x5f8
+   flags:      0x18085
+   version:    2
+
+Sections:
+Idx Name          Size      VMA               LMA               File off  Algn
+  0 .text         000003f3  00000000000008b4  00000000000008b4  000008b4  2**1
+                  CONTENTS, ALLOC, LOAD, CODE
+  1 __TEXT.__stubs 00000090  0000000000000ca8  0000000000000ca8  00000ca8  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 __TEXT.__stub_helper 00000100  0000000000000d38  0000000000000d38  00000d38  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .cstring      0000002d  0000000000000e38  0000000000000e38  00000e38  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 __TEXT.__unwind_info 00000060  0000000000000e68  0000000000000e68  00000e68  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  5 .eh_frame     00000138  0000000000000ec8  0000000000000ec8  00000ec8  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  6 __DATA.__nl_symbol_ptr 00000010  0000000000001000  0000000000001000  00001000  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+  7 __DATA.__la_symbol_ptr 000000c0  0000000000001010  0000000000001010  00001010  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+  8 .mod_init_func 00000008  00000000000010d0  00000000000010d0  000010d0  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+  9 .data         00000040  00000000000010d8  00000000000010d8  000010d8  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+SYMBOL TABLE:
+0000000000000000      d  64 SO     00 0000 /Users/maiken/Code/node-clipboard/build/../src/
+0000000000000000      d  64 SO     00 0000 node_clipboard.cc
+000000005c6aba87      d  66 OSO    03 0001 /Users/maiken/Code/node-clipboard/build/Release/obj.target/clipboard/src/node_clipboard.o
+00000000000008b4      d  2e BNSYM  01 0000 
+00000000000008b4      d  24 FUN    01 0000 __Z3fooRKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+0000000000000000      d  84 SOL    00 0000 ../node_modules/nan/nan_implementation_12_inl.h
+0000000000000000      d  84 SOL    00 0000 ../src/node_clipboard.cc
+0000000000000000      d  84 SOL    00 0000 /Users/maiken/.node-gyp/10.13.0/include/node/v8.h
+0000000000000000      d  84 SOL    00 0000 ../node_modules/nan/nan_new.h
+0000000000000000      d  84 SOL    00 0000 ../node_modules/nan/nan_maybe_43_inl.h
+0000000000000000      d  84 SOL    00 0000 ../node_modules/nan/nan_callbacks_12_inl.h
+00000000000000dc      d  24 FUN    00 0000 
+00000000000000dc      d  4e ENSYM  01 0000 
+0000000000000990      d  2e BNSYM  01 0000 
+0000000000000990      d  24 FUN    01 0000 __Z7InitAllN2v85LocalINS_6ObjectEEE
+00000000000000eb      d  24 FUN    00 0000 
+00000000000000eb      d  4e ENSYM  01 0000 
+0000000000000a7b      d  2e BNSYM  01 0000 
+0000000000000a7b      d  24 FUN    01 0000 __ZL19_register_clipboardv
+0000000000000011      d  24 FUN    00 0000 
+0000000000000011      d  4e ENSYM  01 0000 
+0000000000000a8c      d  2e BNSYM  01 0000 
+0000000000000a8c      d  24 FUN    01 0000 __ZN3Nan3imp7FactoryIN2v816FunctionTemplateEE3NewEPFvRKNS_20FunctionCallbackInfoINS2_5ValueEEEENS2_5LocalIS6_EENSC_INS2_9SignatureEEE
+0000000000000161      d  24 FUN    00 0000 
+0000000000000161      d  4e ENSYM  01 0000 
+0000000000000bed      d  2e BNSYM  01 0000 
+0000000000000bed      d  24 FUN    01 0000 __ZN3Nan3impL23FunctionCallbackWrapperERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+00000000000000af      d  24 FUN    00 0000 
+00000000000000af      d  4e ENSYM  01 0000 
+00000000000010d8      d  26 STSYM  0a 0000 __ZL7_module
+0000000000000000      d  64 SO     01 0000 
+0000000000000000      d  64 SO     00 0000 /Users/maiken/Code/node-clipboard/build/../src/
+0000000000000000      d  64 SO     00 0000 clipboard_test.c
+000000005c6aba87      d  66 OSO    03 0001 /Users/maiken/Code/node-clipboard/build/Release/obj.target/clipboard/src/clipboard_test.o
+0000000000000c9c      d  2e BNSYM  01 0000 
+0000000000000c9c      d  24 FUN    01 0000 _foo
+0000000000000000      d  84 SOL    00 0000 ../src/clipboard_test.c
+000000000000000b      d  24 FUN    00 0000 
+000000000000000b      d  4e ENSYM  01 0000 
+0000000000000000      d  64 SO     01 0000 
+0000000000000a7b l       0e SECT   01 0000 [.text] __ZL19_register_clipboardv
+0000000000000a8c g       1e SECT   01 0080 [.text] __ZN3Nan3imp7FactoryIN2v816FunctionTemplateEE3NewEPFvRKNS_20FunctionCallbackInfoINS2_5ValueEEEENS2_5LocalIS6_EENSC_INS2_9SignatureEEE
+0000000000000bed l       0e SECT   01 0000 [.text] __ZN3Nan3impL23FunctionCallbackWrapperERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+00000000000010d8 l       0e SECT   0a 0000 [.data] __ZL7_module
+00000000000008b4 g       0f SECT   01 0000 [.text] __Z3fooRKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+0000000000000990 g       0f SECT   01 0000 [.text] __Z7InitAllN2v85LocalINS_6ObjectEEE
+0000000000000c9c g       0f SECT   01 0000 [.text] _foo
+0000000000000000 g       01 UND    00 fe00 __ZN2v811HandleScope12CreateHandleEPNS_8internal10HeapObjectEPNS1_6ObjectE
+0000000000000000 g       01 UND    00 fe00 __ZN2v811HandleScope12CreateHandleEPNS_8internal7IsolateEPNS1_6ObjectE
+0000000000000000 g       01 UND    00 fe00 __ZN2v811HandleScopeC1EPNS_7IsolateE
+0000000000000000 g       01 UND    00 fe00 __ZN2v811HandleScopeD1Ev
+0000000000000000 g       01 UND    00 fe00 __ZN2v811HandleScopeD2Ev
+0000000000000000 g       01 UND    00 fe00 __ZN2v814ObjectTemplate11NewInstanceENS_5LocalINS_7ContextEEE
+0000000000000000 g       01 UND    00 fe00 __ZN2v814ObjectTemplate21SetInternalFieldCountEi
+0000000000000000 g       01 UND    00 fe00 __ZN2v814ObjectTemplate3NewEPNS_7IsolateENS_5LocalINS_16FunctionTemplateEEE
+0000000000000000 g       01 UND    00 fe00 __ZN2v816FunctionTemplate11GetFunctionENS_5LocalINS_7ContextEEE
+0000000000000000 g       01 UND    00 fe00 __ZN2v816FunctionTemplate3NewEPNS_7IsolateEPFvRKNS_20FunctionCallbackInfoINS_5ValueEEEENS_5LocalIS4_EENSA_INS_9SignatureEEEiNS_19ConstructorBehaviorENS_14SideEffectTypeE
+0000000000000000 g       01 UND    00 fe00 __ZN2v820EscapableHandleScope6EscapeEPPNS_8internal6ObjectE
+0000000000000000 g       01 UND    00 fe00 __ZN2v820EscapableHandleScopeC1EPNS_7IsolateE
+0000000000000000 g       01 UND    00 fe00 __ZN2v82V812ToLocalEmptyEv
+0000000000000000 g       01 UND    00 fe00 __ZN2v86Number3NewEPNS_7IsolateEd
+0000000000000000 g       01 UND    00 fe00 __ZN2v86Object16SetInternalFieldEiNS_5LocalINS_5ValueEEE
+0000000000000000 g       01 UND    00 fe00 __ZN2v86Object20SlowGetInternalFieldEi
+0000000000000000 g       01 UND    00 fe00 __ZN2v86Object3NewEPNS_7IsolateE
+0000000000000000 g       01 UND    00 fe00 __ZN2v86Object3SetENS_5LocalINS_7ContextEEENS1_INS_5ValueEEES5_
+0000000000000000 g       01 UND    00 fe00 __ZN2v86String11NewFromUtf8EPNS_7IsolateEPKcNS_13NewStringTypeEi
+0000000000000000 g       01 UND    00 fe00 __ZN2v87Isolate10GetCurrentEv
+0000000000000000 g       01 UND    00 fe00 __ZN2v87Isolate17GetCurrentContextEv
+0000000000000000 g       01 UND    00 fe00 __ZN2v88External3NewEPNS_7IsolateEPv
+0000000000000000 g       01 UND    00 fe00 __ZNK2v88External5ValueEv
+0000000000000000 g       01 UND    00 fe00 _node_module_register
+0000000000000000 g       01 UND    00 0400 dyld_stub_binder
+
+
