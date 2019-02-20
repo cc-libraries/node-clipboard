@@ -9,7 +9,7 @@
  *
  * author: hello_chenchen <https://github.com/hello-chenchen>
  **********************************************************************************/
-// #include "clipboard.h"
+#include "clipboard.h"
 // #include "clipboard_mac.h"
 // #include "clipboard_x11.h"
 
@@ -17,14 +17,13 @@
 #include <node.h>
 #include <nan.h>
 #include <v8.h>
-#include "clipboard_test.h"
 
 using namespace v8;
 // using namespace cclib;
 
-NAN_METHOD(foo)
+NAN_METHOD(feeo)
 {
-    // Clipboard* clipboardInstance = NULL;
+    Clipboard* clipboardInstance = NULL;
 	//Create our return object.
 	Local<Object> obj = Nan::New<Object>();
 
@@ -38,24 +37,24 @@ NAN_METHOD(foo)
     // clipboardInstance = new ClipboardX11();
     // #endif
 
-    // clipboardInstance = new Clipboard();
+    clipboardInstance = new Clipboard();
 
     // if(NULL == clipboardInstance) {
     //     info.GetReturnValue().Set(obj);
     //     return;
     // }
-    int testValue = foo();
-	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(testValue));
+    size_t value = clipboardInstance->foo();
+	Nan::Set(obj, Nan::New("vaule").ToLocalChecked(), Nan::New<Number>(value));
 
 	info.GetReturnValue().Set(obj);
 
-    // delete clipboardInstance;
+    delete clipboardInstance;
 }
 
 NAN_MODULE_INIT(InitAll)
 {
-    Nan::Set(target, Nan::New("foo").ToLocalChecked(),
-		Nan::GetFunction(Nan::New<FunctionTemplate>(foo)).ToLocalChecked());
+    Nan::Set(target, Nan::New("feeo").ToLocalChecked(),
+		Nan::GetFunction(Nan::New<FunctionTemplate>(feeo)).ToLocalChecked());
 }
 
 NODE_MODULE(clipboard, InitAll)
