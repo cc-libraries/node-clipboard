@@ -19,20 +19,32 @@
 
 #include "base/os.h"
 
-// namespace cclib {
+namespace cclib {
 
 class Clipboard : public Nan::ObjectWrap {
-    public:
-        Clipboard();
-        ~Clipboard();
+public:
+    static NAN_MODULE_INIT(Init);
+    //TODO:
+    // static Nan::Persistent<FunctionTemplate> constructor_template;
 
-    public:
-        size_t foo();
+    // static inline bool HasInstance(Local<Value> val) {
+    //     Nan::HandleScope scope;
+    //     if (!val->IsObject()) return false;
+    //     Local<Object> obj = val.As<Object>();
+    //     return Nan::New(constructor_template)->HasInstance(obj);
+    // }
 
-    public:
-        size_t flag;
+protected:
+    Clipboard() : Nan::ObjectWrap(), flag(100) {}
+    ~Clipboard();
+
+    // void call();
+    static NAN_METHOD(New);
+    static NAN_METHOD(foo);
+
+    size_t flag;
 }; //class clipboard
 
-// } //namespace cclib
+} //namespace cclib
 
 #endif  // CCLIB_CLIPBOARD_H_

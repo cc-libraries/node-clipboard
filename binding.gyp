@@ -41,7 +41,7 @@
 
         'sources': [
             'src/node_clipboard.cc',
-            'src/clipboard.c'
+            'src/clipboard.cc'
         ]
     }]
 }
