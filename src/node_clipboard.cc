@@ -19,7 +19,7 @@
 #include <v8.h>
 
 using namespace v8;
-// using namespace cclib;
+using namespace cclib;
 
 NAN_METHOD(foo)
 {
