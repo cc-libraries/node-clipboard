@@ -21,7 +21,7 @@
 using namespace v8;
 // using namespace cclib;
 
-NAN_METHOD(feeo)
+NAN_METHOD(foo)
 {
     Clipboard* clipboardInstance = NULL;
 	//Create our return object.
@@ -53,8 +53,8 @@ NAN_METHOD(feeo)
 
 NAN_MODULE_INIT(InitAll)
 {
-    Nan::Set(target, Nan::New("feeo").ToLocalChecked(),
-		Nan::GetFunction(Nan::New<FunctionTemplate>(feeo)).ToLocalChecked());
+    Nan::Set(target, Nan::New("foo").ToLocalChecked(),
+		Nan::GetFunction(Nan::New<FunctionTemplate>(foo)).ToLocalChecked());
 }
 
 NODE_MODULE(clipboard, InitAll)
