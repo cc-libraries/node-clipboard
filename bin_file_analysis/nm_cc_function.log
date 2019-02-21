@@ -1,33 +1,180 @@
-0000000000000000 T __Z4feeoRKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
-0000000000000112 T __Z7InitAllN2v85LocalINS_6ObjectEEE
-00000000000001fd t __ZL19_register_clipboardv
-0000000000000470 d __ZL7_module
+                 U __Z18sqlite_code_stringi
+                 U __Z24sqlite_authorizer_stringi
+0000000000001990 T __ZN12node_sqlite38Database10OpenGetterEN2v85LocalINS1_6StringEEERKN3Nan20PropertyCallbackInfoINS1_5ValueEEE
+00000000000033b0 T __ZN12node_sqlite38Database10Work_CloseEP9uv_work_s
+00000000000010a0 T __ZN12node_sqlite38Database11ParallelizeERKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+0000000000000d90 T __ZN12node_sqlite38Database13LoadExtensionERKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+0000000000004010 T __ZN12node_sqlite38Database13TraceCallbackEPS0_PNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE
+00000000000041e0 T __ZN12node_sqlite38Database13TraceCallbackEPvPKc
+0000000000003f50 T __ZN12node_sqlite38Database14SetBusyTimeoutEPNS0_5BatonE
+0000000000004830 T __ZN12node_sqlite38Database14UpdateCallbackEPS0_PNS0_10UpdateInfoE
+0000000000004ab0 T __ZN12node_sqlite38Database14UpdateCallbackEPviPKcS3_x
+0000000000004e90 T __ZN12node_sqlite38Database14Work_AfterExecEP9uv_work_s
+0000000000002ab0 T __ZN12node_sqlite38Database14Work_AfterOpenEP9uv_work_s
+0000000000004d00 T __ZN12node_sqlite38Database14Work_BeginExecEPNS0_5BatonE
+0000000000002900 T __ZN12node_sqlite38Database14Work_BeginOpenEPNS0_5BatonE
+0000000000004300 T __ZN12node_sqlite38Database15ProfileCallbackEPS0_PNS0_11ProfileInfoE
+0000000000004510 T __ZN12node_sqlite38Database15ProfileCallbackEPvPKcy
+0000000000003220 T __ZN12node_sqlite38Database15RemoveCallbacksEv
+00000000000034e0 T __ZN12node_sqlite38Database15Work_AfterCloseEP9uv_work_s
+00000000000031d0 T __ZN12node_sqlite38Database15Work_BeginCloseEPNS0_5BatonE
+0000000000006b80 T __ZN12node_sqlite38Database18LoadExtensionBatonC2EPS0_N2v85LocalINS3_8FunctionEEEPKc
+0000000000006d80 T __ZN12node_sqlite38Database18LoadExtensionBatonD0Ev
+0000000000006cf0 T __ZN12node_sqlite38Database18LoadExtensionBatonD1Ev
+00000000000055e0 T __ZN12node_sqlite38Database18Work_LoadExtensionEP9uv_work_s
+0000000000009a50 B __ZN12node_sqlite38Database20constructor_templateE
+0000000000003c10 T __ZN12node_sqlite38Database21RegisterTraceCallbackEPNS0_5BatonE
+0000000000004690 T __ZN12node_sqlite38Database22RegisterUpdateCallbackEPNS0_5BatonE
+0000000000003db0 T __ZN12node_sqlite38Database23RegisterProfileCallbackEPNS0_5BatonE
+0000000000005760 T __ZN12node_sqlite38Database23Work_AfterLoadExtensionEP9uv_work_s
+00000000000055b0 T __ZN12node_sqlite38Database23Work_BeginLoadExtensionEPNS0_5BatonE
+00000000000002b0 T __ZN12node_sqlite38Database3NewERKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+00000000000009f0 T __ZN12node_sqlite38Database4ExecERKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+0000000000000000 T __ZN12node_sqlite38Database4InitEN2v85LocalINS1_6ObjectEEE
+0000000000000be0 T __ZN12node_sqlite38Database4WaitERKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+0000000000006880 T __ZN12node_sqlite38Database5BatonD0Ev
+0000000000006810 T __ZN12node_sqlite38Database5BatonD1Ev
+0000000000000840 T __ZN12node_sqlite38Database5CloseERKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+0000000000001a00 T __ZN12node_sqlite38Database7ProcessEv
+0000000000002200 T __ZN12node_sqlite38Database8ScheduleEPFvPNS0_5BatonEES2_b
+00000000000011c0 T __ZN12node_sqlite38Database9ConfigureERKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+00000000000068f0 T __ZN12node_sqlite38Database9ExecBatonC2EPS0_N2v85LocalINS3_8FunctionEEEPKc
+0000000000006af0 T __ZN12node_sqlite38Database9ExecBatonD0Ev
+0000000000006a60 T __ZN12node_sqlite38Database9ExecBatonD1Ev
+0000000000001790 T __ZN12node_sqlite38Database9InterruptERKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+0000000000006570 T __ZN12node_sqlite38Database9OpenBatonC2EPS0_N2v85LocalINS3_8FunctionEEEPKci
+0000000000006780 T __ZN12node_sqlite38Database9OpenBatonD0Ev
+00000000000066f0 T __ZN12node_sqlite38Database9OpenBatonD1Ev
+0000000000000f80 T __ZN12node_sqlite38Database9SerializeERKN3Nan20FunctionCallbackInfoIN2v85ValueEEE
+0000000000004d30 T __ZN12node_sqlite38Database9Work_ExecEP9uv_work_s
+0000000000002930 T __ZN12node_sqlite38Database9Work_OpenEP9uv_work_s
+00000000000054c0 T __ZN12node_sqlite38Database9Work_WaitEPNS0_5BatonE
+0000000000006280 T __ZN12node_sqlite38DatabaseD0Ev
+0000000000006270 T __ZN12node_sqlite38DatabaseD1Ev
+0000000000006390 T __ZN12node_sqlite38DatabaseD2Ev
                  U __ZN2v811HandleScope12CreateHandleEPNS_8internal10HeapObjectEPNS1_6ObjectE
                  U __ZN2v811HandleScope12CreateHandleEPNS_8internal7IsolateEPNS1_6ObjectE
                  U __ZN2v811HandleScopeC1EPNS_7IsolateE
                  U __ZN2v811HandleScopeD1Ev
                  U __ZN2v811HandleScopeD2Ev
                  U __ZN2v814ObjectTemplate11NewInstanceENS_5LocalINS_7ContextEEE
+                 U __ZN2v814ObjectTemplate11SetAccessorENS_5LocalINS_4NameEEEPFvS3_RKNS_20PropertyCallbackInfoINS_5ValueEEEEPFvS3_NS1_IS5_EERKNS4_IvEEESB_NS_13AccessControlENS_17PropertyAttributeENS1_INS_17AccessorSignatureEEE
                  U __ZN2v814ObjectTemplate21SetInternalFieldCountEi
                  U __ZN2v814ObjectTemplate3NewEPNS_7IsolateENS_5LocalINS_16FunctionTemplateEEE
                  U __ZN2v816FunctionTemplate11GetFunctionENS_5LocalINS_7ContextEEE
+                 U __ZN2v816FunctionTemplate12SetClassNameENS_5LocalINS_6StringEEE
+                 U __ZN2v816FunctionTemplate16InstanceTemplateEv
+                 U __ZN2v816FunctionTemplate17PrototypeTemplateEv
                  U __ZN2v816FunctionTemplate3NewEPNS_7IsolateEPFvRKNS_20FunctionCallbackInfoINS_5ValueEEEENS_5LocalIS4_EENSA_INS_9SignatureEEEiNS_19ConstructorBehaviorENS_14SideEffectTypeE
                  U __ZN2v820EscapableHandleScope6EscapeEPPNS_8internal6ObjectE
                  U __ZN2v820EscapableHandleScopeC1EPNS_7IsolateE
                  U __ZN2v82V812ToLocalEmptyEv
+                 U __ZN2v82V813DisposeGlobalEPPNS_8internal6ObjectE
+                 U __ZN2v82V817FromJustIsNothingEv
+                 U __ZN2v82V818GlobalizeReferenceEPNS_8internal7IsolateEPPNS1_6ObjectE
+                 U __ZN2v82V88MakeWeakEPPNS_8internal6ObjectEPvPFvRKNS_16WeakCallbackInfoIvEEENS_16WeakCallbackTypeE
+                 U __ZN2v82V89ClearWeakEPPNS_8internal6ObjectE
                  U __ZN2v86Number3NewEPNS_7IsolateEd
                  U __ZN2v86Object16SetInternalFieldEiNS_5LocalINS_5ValueEEE
+                 U __ZN2v86Object17DefineOwnPropertyENS_5LocalINS_7ContextEEENS1_INS_4NameEEENS1_INS_5ValueEEENS_17PropertyAttributeE
                  U __ZN2v86Object20SlowGetInternalFieldEi
+                 U __ZN2v86Object32SetAlignedPointerInInternalFieldEiPv
+                 U __ZN2v86Object38SlowGetAlignedPointerFromInternalFieldEi
+                 U __ZN2v86Object3GetENS_5LocalINS_7ContextEEENS1_INS_5ValueEEE
                  U __ZN2v86Object3NewEPNS_7IsolateE
                  U __ZN2v86Object3SetENS_5LocalINS_7ContextEEENS1_INS_5ValueEEES5_
                  U __ZN2v86String11NewFromUtf8EPNS_7IsolateEPKcNS_13NewStringTypeEi
+                 U __ZN2v86String6ConcatENS_5LocalIS0_EES2_
+                 U __ZN2v87Integer3NewEPNS_7IsolateEi
                  U __ZN2v87Isolate10GetCurrentEv
+                 U __ZN2v87Isolate14ThrowExceptionENS_5LocalINS_5ValueEEE
                  U __ZN2v87Isolate17GetCurrentContextEv
                  U __ZN2v88External3NewEPNS_7IsolateEPv
-000000000000020e T __ZN3Nan3imp7FactoryIN2v816FunctionTemplateEE3NewEPFvRKNS_20FunctionCallbackInfoINS2_5ValueEEEENS2_5LocalIS6_EENSC_INS2_9SignatureEEE
-000000000000036f t __ZN3Nan3impL23FunctionCallbackWrapperERKN2v820FunctionCallbackInfoINS1_5ValueEEE
-                 U __ZN9Clipboard3fooEv
-                 U __ZN9ClipboardC1Ev
+                 U __ZN2v88Template3SetENS_5LocalINS_4NameEEENS1_INS_4DataEEENS_17PropertyAttributeE
+                 U __ZN2v89Exception5ErrorENS_5LocalINS_6StringEEE
+                 U __ZN2v89Exception9TypeErrorENS_5LocalINS_6StringEEE
+                 U __ZN2v89Signature3NewEPNS_7IsolateENS_5LocalINS_16FunctionTemplateEEE
+0000000000006530 T __ZN3Nan10ObjectWrap12WeakCallbackERKN2v816WeakCallbackInfoIS0_EE
+00000000000062a0 T __ZN3Nan10ObjectWrap3RefEv
+00000000000062c0 T __ZN3Nan10ObjectWrap5UnrefEv
+0000000000006340 T __ZN3Nan10ObjectWrapD0Ev
+00000000000062f0 T __ZN3Nan10ObjectWrapD1Ev
+0000000000003f90 T __ZN3Nan10ThrowErrorEPKc
+00000000000061b0 T __ZN3Nan10Utf8StringC2EN2v85LocalINS1_5ValueEEE
+0000000000001830 T __ZN3Nan11SetAccessorEN2v85LocalINS0_14ObjectTemplateEEENS1_INS0_6StringEEEPFvS5_RKNS_20PropertyCallbackInfoINS0_5ValueEEEEPFvS5_NS1_IS7_EERKNS6_IvEEESD_NS0_13AccessControlENS0_17PropertyAttributeENS1_INS0_17AccessorSignatureEEE
+0000000000002110 T __ZN3Nan12MakeCallbackEN2v85LocalINS0_6ObjectEEENS1_INS0_8FunctionEEEiPNS1_INS0_5ValueEEE
+0000000000002880 T __ZN3Nan14ThrowTypeErrorEPKc
+0000000000000790 T __ZN3Nan18SetPrototypeMethodEN2v85LocalINS0_16FunctionTemplateEEEPKcPFvRKNS_20FunctionCallbackInfoINS0_5ValueEEEE
+0000000000006130 T __ZN3Nan3imp14IntegerFactoryIN2v85Int32EE3NewEi
+0000000000005d90 T __ZN3Nan3imp7FactoryIN2v816FunctionTemplateEE3NewEPFvRKNS_20FunctionCallbackInfoINS2_5ValueEEEENS2_5LocalIS6_EENSC_INS2_9SignatureEEE
+0000000000005fb0 t __ZN3Nan3impL21GetterCallbackWrapperEN2v85LocalINS1_4NameEEERKNS1_20PropertyCallbackInfoINS1_5ValueEEE
+0000000000006070 t __ZN3Nan3impL21SetterCallbackWrapperEN2v85LocalINS1_4NameEEENS2_INS1_5ValueEEERKNS1_20PropertyCallbackInfoIvEE
+0000000000005f00 t __ZN3Nan3impL23FunctionCallbackWrapperERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+                 U __ZN4node12MakeCallbackEPN2v87IsolateENS0_5LocalINS0_6ObjectEEENS3_INS0_8FunctionEEEiPNS3_INS0_5ValueEEENS_13async_contextE
+                 U __ZN4node13EmitAsyncInitEPN2v87IsolateENS0_5LocalINS0_6ObjectEEENS3_INS0_6StringEEEd
+                 U __ZN4node16EmitAsyncDestroyEPN2v87IsolateENS_13async_contextE
+0000000000007dc0 T __ZN5AsyncIN12node_sqlite38Database10UpdateInfoES1_E5closeEP11uv_handle_s
+0000000000007d10 T __ZN5AsyncIN12node_sqlite38Database10UpdateInfoES1_E8listenerEP10uv_async_si
+0000000000007b80 T __ZN5AsyncIN12node_sqlite38Database11ProfileInfoES1_E5closeEP11uv_handle_s
+0000000000007ad0 T __ZN5AsyncIN12node_sqlite38Database11ProfileInfoES1_E8listenerEP10uv_async_si
+0000000000007940 T __ZN5AsyncINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN12node_sqlite38DatabaseEE5closeEP11uv_handle_s
+0000000000007890 T __ZN5AsyncINSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN12node_sqlite38DatabaseEE8listenerEP10uv_async_si
+                 U __ZNK2v85Value10Int32ValueENS_5LocalINS_7ContextEEE
+                 U __ZNK2v85Value10IsFunctionEv
+                 U __ZNK2v85Value6EqualsENS_5LocalINS_7ContextEEENS1_IS0_EE
+                 U __ZNK2v85Value6IsNameEv
+                 U __ZNK2v85Value7IsInt32Ev
+                 U __ZNK2v85Value7ToInt32ENS_5LocalINS_7ContextEEE
+                 U __ZNK2v85Value8ToStringENS_5LocalINS_7ContextEEE
+                 U __ZNK2v86String6LengthEv
+                 U __ZNK2v86String9WriteUtf8EPciPii
                  U __ZNK2v88External5ValueEv
+                 U __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+                 U __ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv
+                 U __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+                 U __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7reserveEm
+                 U __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+0000000000007530 T __ZNSt3__114__split_bufferIPPN12node_sqlite38Database4CallENS_9allocatorIS5_EEE10push_frontEOS5_
+0000000000007360 T __ZNSt3__114__split_bufferIPPN12node_sqlite38Database4CallENS_9allocatorIS5_EEE9push_backEOS5_
+00000000000076e0 T __ZNSt3__114__split_bufferIPPN12node_sqlite38Database4CallERNS_9allocatorIS5_EEE10push_frontERKS5_
+0000000000006e10 T __ZNSt3__15dequeIPN12node_sqlite38Database4CallENS_9allocatorIS4_EEE19__add_back_capacityEv
+0000000000007e30 T __ZNSt3__16vectorIPN12node_sqlite38Database10UpdateInfoENS_9allocatorIS4_EEE21__push_back_slow_pathIRKS4_EEvOT_
+0000000000007bf0 T __ZNSt3__16vectorIPN12node_sqlite38Database11ProfileInfoENS_9allocatorIS4_EEE21__push_back_slow_pathIRKS4_EEvOT_
+00000000000079b0 T __ZNSt3__16vectorIPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS7_EEE21__push_back_slow_pathIRKS7_EEvOT_
+0000000000008220 D __ZTVN12node_sqlite38Database18LoadExtensionBatonE
+00000000000081e0 D __ZTVN12node_sqlite38Database5BatonE
+0000000000008200 D __ZTVN12node_sqlite38Database9ExecBatonE
+00000000000081c0 D __ZTVN12node_sqlite38Database9OpenBatonE
+0000000000008160 D __ZTVN12node_sqlite38DatabaseE
+0000000000008190 D __ZTVN3Nan10ObjectWrapE
+                 U __ZdlPv
                  U __Znwm
-                 U _node_module_register
+                 U ___stack_chk_fail
+                 U ___stack_chk_guard
+                 U _abort
+                 U _free
+                 U _malloc
+                 U _memcpy
+                 U _memmove
+                 U _pthread_mutex_destroy
+                 U _pthread_mutex_init
+                 U _pthread_mutex_lock
+                 U _pthread_mutex_unlock
+                 U _sqlite3_busy_timeout
+                 U _sqlite3_close
+                 U _sqlite3_enable_load_extension
+                 U _sqlite3_errmsg
+                 U _sqlite3_exec
+                 U _sqlite3_free
+                 U _sqlite3_interrupt
+                 U _sqlite3_load_extension
+                 U _sqlite3_open_v2
+                 U _sqlite3_profile
+                 U _sqlite3_trace
+                 U _sqlite3_update_hook
+                 U _strlen
+                 U _uv_async_init
+                 U _uv_async_send
+                 U _uv_close
+                 U _uv_default_loop
+                 U _uv_queue_work
