@@ -13,10 +13,6 @@
 #ifndef CCLIB_CLIPBOARD_MAC_H_
 #define CCLIB_CLIPBOARD_MAC_H_
 
-#include <AppKit/AppKit.h>
-#include <AppKit/NSPasteboard.h>
-#include <Foundation/Foundation.h>
-
 #include "clipboard.h"
 
 namespace cclib {
