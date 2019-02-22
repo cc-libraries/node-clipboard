@@ -21,16 +21,15 @@
 
 namespace cclib {
 
-// class Clipboard;
-
 class Clipboard : public Nan::ObjectWrap {
 public:
     Clipboard();
-    ~Clipboard();
+    virtual ~Clipboard() = 0;
 
-    size_t foo();
+public:
+    virtual size_t foo() = 0;
 
-private:
+protected:
     size_t flag;
 }; //class clipboard
 

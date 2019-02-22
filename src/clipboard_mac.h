@@ -13,13 +13,13 @@
 #ifndef CCLIB_CLIPBOARD_MAC_H_
 #define CCLIB_CLIPBOARD_MAC_H_
 
-// #include <AppKit/AppKit.h>
-// #include <AppKit/NSPasteboard.h>
-// #include <Foundation/Foundation.h>
+#include <AppKit/AppKit.h>
+#include <AppKit/NSPasteboard.h>
+#include <Foundation/Foundation.h>
 
 #include "clipboard.h"
 
-// namespace cclib {
+namespace cclib {
 
 class ClipboardMac : public Clipboard {
 
@@ -28,9 +28,9 @@ class ClipboardMac : public Clipboard {
         ~ClipboardMac();
 
     public:
-        // size_t foo();
-};
+        size_t foo();
+};  //class ClipboardMac
 
-// }
+}   //namespace cclib
 
 #endif

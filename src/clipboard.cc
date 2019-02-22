@@ -18,15 +18,7 @@ namespace cclib {
 
 Clipboard::Clipboard() {
     //TODO:
-    flag = 100;
-}
-
-Clipboard::~Clipboard() {
-    
-}
-
-size_t Clipboard::foo() {
-    return flag;
+    flag = -1;
 }
 
 } //namespace cclib
