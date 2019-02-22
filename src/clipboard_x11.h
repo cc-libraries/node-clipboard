@@ -15,7 +15,7 @@
 
 #include "clipboard.h"
 
-// namespace cclib {
+namespace cclib {
 
 class ClipboardX11 : public Clipboard {
 
@@ -24,9 +24,9 @@ class ClipboardX11 : public Clipboard {
         ~ClipboardX11();
 
     public:
-        // size_t foo();
-};
+        size_t foo();
+};  //class ClipboardX11
 
-// }
+}   //namespace cclib
 
-#endif
+#endif  //CCLIB_CLIPBOARD_X11_H_

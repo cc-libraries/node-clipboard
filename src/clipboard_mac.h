@@ -29,4 +29,4 @@ class ClipboardMac : public Clipboard {
 
 }   //namespace cclib
 
-#endif
+#endif  //CCLIB_CLIPBOARD_MAC_H_
