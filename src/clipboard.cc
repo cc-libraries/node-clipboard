@@ -20,7 +20,7 @@ namespace cclib {
 
 Clipboard::Clipboard() {
     //TODO:
-    flag = -1;
+    flag = 1;
 }
 
 Clipboard::~Clipboard() {
