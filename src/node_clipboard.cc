@@ -11,7 +11,7 @@
  **********************************************************************************/
 #include "clipboard.h"
 #include "clipboard_mac.h"
-// #include "clipboard_x11.h"
+#include "clipboard_x11.h"
 
 
 using namespace v8;
@@ -28,10 +28,10 @@ NAN_METHOD(foo)
     clipboardInstance = new ClipboardMac();
     #endif
 
-    // //clipboard linux install
-    // #if defined(USE_X11)
-    // clipboardInstance = new ClipboardX11();
-    // #endif
+    //clipboard linux install
+    #if defined(USE_X11)
+    clipboardInstance = new ClipboardX11();
+    #endif
 
     if(NULL == clipboardInstance) {
         info.GetReturnValue().Set(obj);
